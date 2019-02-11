@@ -26,6 +26,16 @@ int main(){
 		else printf("  %.2f",aR[i]);
 		printf("\n");
 	}
+	// for(i=0;i<3;i++){
+	// 	for(j=0;i<3;j++){
+	// 		if(aL[i][j] == 0){
+
+	// 		}
+	// 	}
+	// }
+	if(aL[0][0] == 0 || aL[1][1] ==0 || aL[2][2] ==0){
+		printf("GG digonal 0\n");
+	}else{
     printf("Enter Initial value of X1 X2 and X3 respectively : ");
     for (i = 0; i < MAX; i++) {
         scanf("%f", &x[i]);
@@ -44,6 +54,6 @@ int main(){
 		e3 = ((n3-o3)/n3)*100;
         printf("%d\t%.2f\t\t%.2f\t\t%.2f\t\t%.2f\t\t%.2f\t\t%.2f\n",i+1,x[0],e1,x[1],e2,x[2],e3);
 	}
-
+}
     return 0;
 }
